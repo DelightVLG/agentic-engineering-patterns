@@ -32,18 +32,18 @@ chapters/
 chapter: 1
 title: "Название главы"
 original_title: "Original Chapter Title"
-status: in-progress  # in-progress | review | done
+status: in-progress # in-progress | review | done
 translator: Имя
 ---
 ```
 
 ## Статусы перевода
 
-| Статус | Описание |
-|--------|----------|
-| `in-progress` | Перевод в процессе |
-| `review` | Перевод завершён, нужна проверка |
-| `done` | Проверено и готово |
+| Статус        | Описание                         |
+| ------------- | -------------------------------- |
+| `in-progress` | Перевод в процессе               |
+| `review`      | Перевод завершён, нужна проверка |
+| `done`        | Проверено и готово               |
 
 ## Форматирование
 
