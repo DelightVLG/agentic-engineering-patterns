@@ -1,40 +1,40 @@
-# Writing about Agentic Engineering Patterns
+# Пишу об Agentic Engineering Patterns
 
-_23rd February 2026 · [Simon Willison](https://simonwillison.net/2026/Feb/23/agentic-engineering-patterns/)_
+_23 февраля 2026 года · [Simon Willison](https://simonwillison.net/2026/Feb/23/agentic-engineering-patterns/)_
 
-← [Back to Table of Contents](../README.md)
-
----
-
-I've started a new project to collect and document **Agentic Engineering Patterns**—coding practices and patterns to help get the best results out of this new era of coding agent development we find ourselves entering.
-
-I'm using **Agentic Engineering** to refer to building software using coding agents—tools like Claude Code and OpenAI Codex, where the defining feature is that they can both generate and _execute_ code—allowing them to test that code and iterate on it independently of turn-by-turn guidance from their human supervisor.
-
-I think of **vibe coding** using its original definition of coding where you pay no attention to the code at all, which today is often associated with non-programmers using LLMs to write code.
-
-Agentic Engineering represents the other end of the scale: professional software engineers using coding agents to improve and accelerate their work by amplifying their existing expertise.
-
-There is so much to learn and explore about this new discipline! I've already published a lot under my ai-assisted-programming tag (345 posts and counting) but that's been relatively unstructured. My new goal is to produce something that helps answer the question "how do I get good results out of this stuff" all in one place.
-
-I'll be developing and growing this project here on my blog as a series of chapter-shaped patterns, loosely inspired by the format popularized by _Design Patterns: Elements of Reusable Object-Oriented Software_ back in 1994.
-
-I published the first two chapters today:
-
-- **Writing code is cheap now** talks about the central challenge of agentic engineering: the cost to churn out initial working code has dropped to almost nothing, how does that impact our existing intuitions about how we work, both individually and as a team?
-- **Red/green TDD** describes how test-first development helps agents write more succinct and reliable code with minimal extra prompting.
-
-I hope to add more chapters at a rate of 1-2 a week. I don't really know when I'll stop, there's a lot to cover!
-
-## Written by me, not by an LLM
-
-I have a strong personal policy of not publishing AI-generated writing under my own name. That policy will hold true for Agentic Engineering Patterns as well. I'll be using LLMs for proofreading and fleshing out example code and all manner of other side-tasks, but the words you read here will be my own.
-
-## Chapters and Guides
-
-Agentic Engineering Patterns isn't exactly _a book_, but it's kind of book-shaped. I'll be publishing it on my site using a new shape of content I'm calling a _guide_. A guide is a collection of chapters, where each chapter is effectively a blog post with a less prominent date that's designed to be updated over time, not frozen at the point of first publication.
-
-Guides and chapters are my answer to the challenge of publishing "evergreen" content on a blog. I've been trying to find a way to do this for a while now. This feels like a format that might stick.
+← [Назад к оглавлению](../README.md)
 
 ---
 
-← [Back to Table of Contents](../README.md)
+Я запустил новый проект, чтобы собрать и описать **Agentic Engineering Patterns (далее Паттерны Агентной Инженерии)**: практики и паттерны разработки, которые помогут получить наилучшие результаты в новой эпохе разработки с использованием агентов для программирования, в которую мы сейчас входим.
+
+Термин **Agentic Engineering (далее Агентная Инженерия )** я использую для обозначения создания программ с помощью агентов вроде Claude Code и OpenAI Codex, главная особенность таких инструментов в том, что они не только генерируют код, но и выполняют его. За счет этого они могут самостоятельно тестировать написанное и постепенно дорабатывать его без подробных указаний от человека.
+
+Под **вайб кодингом** я имею в виду оригинальное значение этого термина: программирование, при котором вы вообще не обращаете внимания на код. Сегодня его часто связывают с тем, как люди без опыта разработки используют LLM для написания программ.
+
+Агентная Инженерия - это другой конец спектра: здесь профессиональные разработчики используют агентов, чтобы работать быстрее и эффективнее, опираясь на свои уже существующие знания, опыт и навыки.
+
+В этой новой сфере еще так много предстоит изучить и исследовать! У меня накопилось много публикаций под тегом ai-assisted-programming - 345 на данный момент, и список растет, - но все это было организовано довольно хаотично. Сейчас я хочу собрать все в одном месте и сделать материал, который отвечает на вопрос: "Как вообще получать хорошие результаты от всего этого?"
+
+Я буду развивать этот проект здесь, как серию паттернов, оформленных в виде глав. Отчасти такой формат вдохновлен книгой _Design Patterns: Elements of Reusable Object-Oriented Software_, которая популяризировала его еще в 1994 году.
+
+Я опубликовал первые две главы:
+
+- **Писать код теперь дешево** рассматривает главный вызов агентной инженерии: цена получения первого рабочего варианта кода почти свелась к нулю. Как это влияет на то как мы привыкли работать, и поодиночке, и в команде?
+- **Красный/зеленый TDD** рассказывает, как разработка через тесты помогает агентам писать более лаконичный и надежный код, требуя минимальных корректировок промтами.
+
+Надеюсь получится добавлять по 1-2 новых глав в неделю. Даже не представляю когда останавлюсь: так много нужно охватить!
+
+## Написано мной, а не LLM
+
+У меня есть твердый принцип: не публиковать под своим именем тексты, сгенерированные ИИ. Для Паттернов Агентной Инженерии это правило тоже в силе. Я буду использовать LLM для вычитки, доработки примеров кода и различных вспомогательных задач, но все, что вы читаете здесь, написаны мной.
+
+## Главы и гайды
+
+Паттерны Агентной Инженерии - это не совсем _книга_, но очень близкое к ней. Я буду публиковать этот проект у себя на сайте в новом формате контента, который называю _гайдом_. Гайд - это серия глав, где каждая глава по сути является постом в блоге, но с менее акцентированной датой публикации и с расчетом на то, что текст будет со временем обновляться, а не оставаться навсегда в первоначальной версии.
+
+Гайды и главы - мой ответ на вопрос, как публиковать в блоге материалы, которые долго остаются актуальными. Я уже давно пытался найти для этого подходящий формат, и, похоже, этот вариант может прижиться.
+
+---
+
+← [Назад к оглавлению](../README.md)
