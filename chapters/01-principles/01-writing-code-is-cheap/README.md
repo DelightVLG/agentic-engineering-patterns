@@ -1,39 +1,39 @@
-## Writing code is cheap now
+## Писать код теперь дёшево
 
-The biggest challenge in adopting agentic engineering practices is getting comfortable with the consequences of the fact that *writing code is cheap now*.
+Главная трудность при переходе к практикам агентной инженерии — принять тот факт, что _писать код теперь дёшево_.
 
-Code has always been expensive. Producing a few hundred lines of clean, tested code takes most software developers a full day or more. Many of our engineering habits, at both the macro and micro level, are built around this core constraint.
+Код всегда был дорогим. Написание нескольких сотен строк чистого, протестированного кода занимает у большинства разработчиков целый день или даже больше. Множество наших инженерных привычек — и на макро, и на микроуровне выстроены вокруг этого базового ограничения.
 
-At the macro level we spend a great deal of time designing, estimating and planning out projects, to ensure that our expensive coding time is spent as efficiently as possible. Product feature ideas are evaluated in terms of how much value they can provide *in exchange for that time* - a feature needs to earn its development costs many times over to be worthwhile!
+На макроуровне мы тратим кучу времени на проектирование, оценку и планирование проектов, чтобы наше дорогое время написания кода расходовалось максимально эффективно. Новые продуктовые фичи оцениваются с точки зрения того, какую ценность они могут принести _в обмен на затраченное время_ — фича должна многократно окупить затраты на разработку, чтобы это вообще имело смысл!
 
-At the micro level we make hundreds of decisions a day predicated on available time and anticipated tradeoffs. Should I refactor that function to be slightly more elegant if it adds an extra hour of coding time? How about writing documentation? Is it worth adding a test for this edge case? Can I justify building a debug interface for this?
+На микроуровне мы каждый день принимаем множество решений, основываясь на доступном времени и компромисах на которые мы готовы пойти. Стоит ли отрефакторить функцию, чтобы она стала чуть элегантнее, если это добавит лишний час работы? А стоит ли писать документацию? А имеет ли смысл добавлять тест на этот крайний случай? Реально ли нужно создание отладочного интерфейса?
 
-Coding agents dramatically drop the cost of typing code into the computer, which disrupts *so many* of our existing personal and organizational intuitions about which trade-offs make sense.
+Агенты для программирования радикально удешевляют набор кода, что менят огромное количество личных и организационных представлений о том, какие компромиссы теперь важны.
 
-The ability to run parallel agents makes this even harder to evaluate, since one human engineer can now be implementing, refactoring, testing and documenting code in multiple places at the same time.
+Возможность запускать нескольких агентов параллельно делает оценку ещё сложнее: один инженер теперь может одновременно писать, рефакторить, тестировать и документировать код сразу в нескольких местах.
 
-## Good code still has a cost
+## Хороший код по-прежнему стоит дорого
 
-Delivering new code has dropped in price to almost free... but delivering *good* code remains significantly more expensive than that.
+Выдать новый код теперь почти ничего не стоит… а вот выдать _хороший код_ — по-прежнему дорого.
 
-Here's what I mean by "good code":
+Вот что я имею в виду под «хорошим кодом»:
 
-* The code works. It does what it's meant to do, without bugs.
-* We *know the code works*. We've taken steps to confirm to ourselves and to others that the code is fit for purpose.
-* It solves the right problem.
-* It handles error cases gracefully and predictably: it doesn't just consider the happy path. Errors should provide enough information to help future maintainers understand what went wrong.
-* It's simple and minimal - it does only what's needed, in a way that both humans and machines can understand now and maintain in the future.
-* It's protected by tests. The tests show that it works now and act as a regression suite to avoid it quietly breaking in the future.
-* It's documented at an appropriate level, and that documentation reflects the current state of the system - if the code changes an existing behavior the existing documentation needs to be updated to match.
-* The design affords future changes. It's important to maintain [YAGNI](https://en.wikipedia.org/wiki/You_aren%27t_gonna_need_it) - code with added complexity to anticipate future changes that may never come is often bad code - but it's also important not to write code that makes future changes much harder than they should be.
-* All of the other relevant "ilities" - accessibility, testability, reliability, security, maintainability, observability, scalability, usability - the non-functional quality measures that are appropriate for the particular class of software being developed.
+- Код работает. Он делает то, что должен, без багов.
+- Мы _знаем, что код работает_. Мы позаботились о том, чтобы и мы и другие были уверены в том, что код выполняется и написан так, как и было задуманно.
+- Он решает правильную задачу.
+- Он обрабатывает ошибки корректно и предсказуемо: он не ограничивается только успешным сценарием. Ошибки должны содержать достаточно информации, чтобы всем было понятно, что пошло не так.
+- Он прост и минимален — делает только то, что нужно, так, чтобы и люди, и машины могли понять и поддерживать его сейчас и в будущем.
+- Он покрыт тестами. Тесты подтверждают, что код работает сейчас, и служат набором регрессионных проверок, не давая ему незаметно сломаться в будущем.
+- Он задокументирован на принятом уровне, и эта документация отражает текущее состояние системы — если код меняет существующее поведение, документация должна быть обновлена.
+- Дизайн инженерных решений должен допускает будущие изменения. Важно соблюдать [YAGNI](https://ru.wikipedia.org/wiki/YAGNI) — код с избыточной сложностью «на будущее» для изменений, которые могут никогда и не понадобиться, зачастую является плохим кодом. Важно не писать код, который делает будущие изменения неоправданно трудными.
+- Соответствие всем остальным нефункциональным требованиям — доступность, тестируемость, надёжность, безопасность, сопровождаемость, наблюдаемость, масштабируемость, удобство использования — показатели качества, уместные для разрабатываемого продукта.
 
-Coding agent tools can help with most of this, but there is still a substantial burden on the developer driving those tools to ensure that the produced code is good code for the subset of good that's needed for the current project.
+Инструменты на основе агентов могут помочь с большинством из этого, но на разработчике, управляющем этими инструментами, по-прежнему лежит значительная ответственность — убедиться, что созданный код является хорошим кодом, который требуется конкретному проекту.
 
-## We need to build new habits
+## Нам нужно выработать новые привычки
 
-The challenge is to develop new personal and organizational habits that respond to the affordances and opportunities of agentic engineering.
+Задача — выработать новые личные и организационные привычки, которые учитывают возможности агентной инженерии.
 
-These best practices are still being figured out across our industry. I'm still figuring them out myself.
+Лучшие практики в этой области всё ещё формируются по всей индустрии. Я и сам продолжаю их осваивать.
 
-For now I think the best we can do is to second guess ourselves: any time our instinct says "don't build that, it's not worth the time" fire off a prompt anyway, in an asynchronous agent session where the worst that can happen is you check ten minutes later and find that it wasn't worth the tokens.
+Пока, я думаю, лучшее, что мы можем сделать, — это подвергать сомнению свои привычные реакции: каждый раз, когда интуиция говорит «не стоит это делать — не окупится по времени», всё равно отправьте промпт в асинхронную сессию агента. В худшем случае вы проверите результат через десять минут и просто убедитесь, что токены были потрачены зря.
