@@ -16,8 +16,8 @@
 
 | #   | Глава                                                                                        | Статус |
 | --- | -------------------------------------------------------------------------------------------- | ------ |
-| 1.1 | [Писать код теперь дешево](./chapters/01-principles/01-writing-code-is-cheap/README.md)      | 🔄     |
-| 1.2 | [Накапливайте то, что уже умеете делать](./chapters/01-principles/02-hoard-things/README.md) | 🔄     |
+| 1.1 | [Писать код теперь дешево](./chapters/01-principles/01-writing-code-is-cheap/README.md)      | ✅     |
+| 1.2 | [Накапливайте то, что уже умеете делать](./chapters/01-principles/02-hoard-things/README.md) | ✅     |
 | 1.3 | [Антипаттерны: чего стоит избегать](./chapters/01-principles/03-anti-patterns/README.md)     | 🔄     |
 
 ### 2. Тестирование и QA
